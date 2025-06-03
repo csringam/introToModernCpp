@@ -11,7 +11,7 @@ searchAlgo::~searchAlgo() {
 int searchAlgo::BST(int arr[], int key) {
 	int left = 0, right = sizeof(arr) / sizeof(arr[0]) - 1;
 
-	while (left <= right) {
+	while (left < right) {
 		int mid = left + (left + right) / 2;
 		if (arr[mid] == key) {
 			return mid;
