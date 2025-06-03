@@ -20,9 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="searchAlgo.cpp" />
     <ClCompile Include="testClass.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="searchAlgo.h" />
     <ClInclude Include="testClass.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
