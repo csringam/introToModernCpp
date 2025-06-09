@@ -19,11 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Integer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="searchAlgo.cpp" />
     <ClCompile Include="testClass.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Integer.h" />
     <ClInclude Include="searchAlgo.h" />
     <ClInclude Include="testClass.h" />
   </ItemGroup>
