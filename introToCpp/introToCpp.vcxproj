@@ -21,8 +21,10 @@
   <ItemGroup>
     <ClCompile Include="Integer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ptrTraining.cpp" />
     <ClCompile Include="searchAlgo.cpp" />
     <ClCompile Include="testClass.cpp" />
+    <ClCompile Include="weakPtrTraining.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Integer.h" />
