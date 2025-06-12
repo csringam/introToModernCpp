@@ -1,47 +1,9 @@
 #include <iostream>
 #include <string>
 #include <memory>
-
-class Project {
-	std::string pName;
-public:
-	void setName(const std::string& name) {
-		pName = name;
-	}
-	void showProjDetails() {
-		std::cout << "Project Name: " << pName << std::endl;
-	}
-};
-
-class Employee {
-	std::shared_ptr<Project> pProject{};
-public:
-	void setProject(std::shared_ptr<Project> &project) {
-		pProject = project;
-	}
-	const std::shared_ptr<Project>& getProject() const {
-		return pProject;
-	}
-};
-
-void showInfo(const std::shared_ptr<Employee>& emp) {
-	std::cout << "Employee project details: ";
-	emp->getProject()->showProjDetails();
-}
+#include <sstream>
 
 
 int main() {
-	std::shared_ptr<Project> project{ new Project{} };
-	project->setName("Pointer Training");
-
-	std::shared_ptr<Employee> em1{ new Employee{} };
-	em1->setProject(project);
-
-	std::shared_ptr<Employee> em2{ new Employee{} };
-	em2->setProject(project);
-
-	project->showProjDetails();
-	showInfo(em1);
-	showInfo(em2);
-	
+    
 }

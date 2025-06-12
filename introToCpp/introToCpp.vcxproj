@@ -23,6 +23,8 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ptrTraining.cpp" />
     <ClCompile Include="searchAlgo.cpp" />
+    <ClCompile Include="stringAssignment1.cpp" />
+    <ClCompile Include="stringAssignment2.cpp" />
     <ClCompile Include="testClass.cpp" />
     <ClCompile Include="weakPtrTraining.cpp" />
   </ItemGroup>
