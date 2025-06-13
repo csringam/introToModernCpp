@@ -25,6 +25,7 @@
     <ClCompile Include="searchAlgo.cpp" />
     <ClCompile Include="stringAssignment1.cpp" />
     <ClCompile Include="stringAssignment2.cpp" />
+    <ClCompile Include="stringAssignment3.cpp" />
     <ClCompile Include="testClass.cpp" />
     <ClCompile Include="weakPtrTraining.cpp" />
   </ItemGroup>
