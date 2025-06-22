@@ -1,6 +1,6 @@
 #include <iostream>
 
 int main() {
-	std::cout << "Hello, World" << std::endl;
+	std::cout << "Finished intro of data and algos" << std::endl;
 	return 0;
 }
