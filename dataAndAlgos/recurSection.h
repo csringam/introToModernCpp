@@ -10,5 +10,7 @@ public:
 	std::string revString(std::string str);
 
 	void printFib(int n);
+
+	void printFizzBuzz(int n);
 };
 

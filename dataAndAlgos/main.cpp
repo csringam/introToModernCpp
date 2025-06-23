@@ -10,13 +10,17 @@ int main() {
 	std::string input = "Hello";
 	std::cout << "Rev string: " << testing.revString(input) << std::endl;
 
-	int fibReq{ 0 };
+	int reqInt{ 0 };
 
 	std::cout << "How many of fib sequence? ";
-	std::cin >> fibReq;
-	std::cout << std::endl;
+	std::cin >> reqInt;
 
-	testing.printFib(fibReq);
+	testing.printFib(reqInt);
+
+	std::cout << "How many FizzBuzz? ";
+	std::cin >> reqInt;
+
+	testing.printFizzBuzz(reqInt);
 
 	return 0;
 }
