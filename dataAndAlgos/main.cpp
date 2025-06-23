@@ -5,6 +5,6 @@ int main() {
 	std::cout << "Finished intro of data and algos" << std::endl;
 	
 	recurSection testing;
-	testing.testThisConnects();
+	testing.recurCount(3);
 	return 0;
 }

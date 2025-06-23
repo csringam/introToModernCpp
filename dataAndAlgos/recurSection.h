@@ -4,6 +4,6 @@
 class recurSection
 {
 public:
-	void testThisConnects();
+	void recurCount(int n);
 };
 
