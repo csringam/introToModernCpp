@@ -61,3 +61,23 @@ void recurSection::printFizzBuzz(int n) {
 		std::cout << std::endl;
 	}
 }
+
+std::vector<int> recurSection::bubbleSort(std::vector<int> list) {
+	std::vector<int> vec(list);
+	int n = vec.size();
+	bool swapped;
+	for (int i = 0; i < n - 1; i++) {
+		swapped = false;
+		for (int j = 0; j < n - i - 1; j++) {
+			std::cout << n-i-1 << " " << j << " " << j + 1 << std::endl;
+			if (vec[j] > vec[j + 1]) {
+				std::swap(vec[j], vec[j + 1]);
+				swapped = true;
+			}
+		}
+		if (!swapped) {
+			break; // If no two elements were swapped, the array is sorted
+		}
+	}
+	return {vec.begin(), vec.end()};
+}

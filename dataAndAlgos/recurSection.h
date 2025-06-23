@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <vector>
 
 class recurSection
 {
@@ -12,5 +13,7 @@ public:
 	void printFib(int n);
 
 	void printFizzBuzz(int n);
+
+	std::vector<int> bubbleSort(std::vector<int> list);
 };
 
