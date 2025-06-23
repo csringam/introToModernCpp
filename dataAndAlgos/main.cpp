@@ -6,5 +6,9 @@ int main() {
 	
 	recurSection testing;
 	testing.recurCount(3);
+
+	std::string input = "Hello";
+	std::cout << "Rev string: " << testing.revString(input) << std::endl;
+
 	return 0;
 }

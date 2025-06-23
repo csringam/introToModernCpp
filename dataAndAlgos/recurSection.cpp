@@ -8,3 +8,11 @@ void recurSection::recurCount(int n) {
 	}
 	return;
 }
+
+std::string recurSection::revString(std::string str) {
+	std::string out;
+	for (int i = str.length() - 1; i >= 0; i--) {
+		out += str[i];
+	}
+	return out;
+}
