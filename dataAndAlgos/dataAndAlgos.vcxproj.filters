@@ -21,6 +21,9 @@
     <ClCompile Include="recurSection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="knapsackProb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="recurSection.h">
