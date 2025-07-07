@@ -19,9 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="account.cpp" />
+    <ClCompile Include="Checking.cpp" />
     <ClCompile Include="Integer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ptrTraining.cpp" />
+    <ClCompile Include="Savings.cpp" />
     <ClCompile Include="searchAlgo.cpp" />
     <ClCompile Include="stringAssignment1.cpp" />
     <ClCompile Include="stringAssignment2.cpp" />
@@ -30,7 +33,10 @@
     <ClCompile Include="weakPtrTraining.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="account.h" />
+    <ClInclude Include="Checking.h" />
     <ClInclude Include="Integer.h" />
+    <ClInclude Include="Savings.h" />
     <ClInclude Include="searchAlgo.h" />
     <ClInclude Include="testClass.h" />
   </ItemGroup>
