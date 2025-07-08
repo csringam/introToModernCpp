@@ -23,6 +23,7 @@
     <ClCompile Include="Checking.cpp" />
     <ClCompile Include="Integer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="newInheritance.cpp" />
     <ClCompile Include="ptrTraining.cpp" />
     <ClCompile Include="Savings.cpp" />
     <ClCompile Include="searchAlgo.cpp" />
