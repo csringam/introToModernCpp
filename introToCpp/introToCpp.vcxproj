@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="account.cpp" />
     <ClCompile Include="Checking.cpp" />
+    <ClCompile Include="excepSection.cpp" />
     <ClCompile Include="Integer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="newInheritance.cpp" />
