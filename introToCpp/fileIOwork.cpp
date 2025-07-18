@@ -15,7 +15,7 @@ Record GetRecord() {
 	input.read((char*)&r, sizeof(Record));
 	return r;
 }
-int main() {
+void fileIOassign() {
 	Record r;
 	r.id = 1001;
 	strcpy_s(r.name,10, "Umar");
