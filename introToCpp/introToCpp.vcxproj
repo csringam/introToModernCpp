@@ -22,6 +22,8 @@
     <ClCompile Include="account.cpp" />
     <ClCompile Include="Checking.cpp" />
     <ClCompile Include="excepSection.cpp" />
+    <ClCompile Include="fileIoCopyReal.cpp" />
+    <ClCompile Include="fileIoWorkReal.cpp" />
     <ClCompile Include="Integer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="newInheritance.cpp" />

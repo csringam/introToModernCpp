@@ -57,6 +57,12 @@
     <ClCompile Include="excepSection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="fileIoCopyReal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileIoWorkReal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Integer.h">
