@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="binarySearchRef.h" />
     <ClCompile Include="knapsackProb.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="recurSection.cpp" />
