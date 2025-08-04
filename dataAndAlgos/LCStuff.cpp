@@ -22,3 +22,25 @@ int totalFruit(vector<int>& fruits) {
     }
     return out;
 }
+
+double myPow(double x, int n) {
+    double out{ x };
+    if (n == 0 || x == 1) {
+        return 1;
+    }
+    else if (n > 0) {
+        int i = 1;
+        while (i < n) {
+            out *= x;
+            i++;
+        }
+    }
+    else {
+        int i = -1;
+        while (i < abs(n)) {
+            out /= x;
+            i++;
+        }
+    }
+    return out;
+}
