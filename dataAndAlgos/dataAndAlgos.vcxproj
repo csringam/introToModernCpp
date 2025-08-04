@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="binarySearchRef.h" />
     <ClCompile Include="knapsackProb.cpp" />
+    <ClCompile Include="LCStuff.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="recurSection.cpp" />
   </ItemGroup>

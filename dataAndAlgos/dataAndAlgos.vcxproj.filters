@@ -27,6 +27,9 @@
     <ClCompile Include="binarySearchRef.h">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LCStuff.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="recurSection.h">
