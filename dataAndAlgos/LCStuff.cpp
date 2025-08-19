@@ -112,22 +112,36 @@ int uniquePaths(int m, int n) {
 
 // largest 3-same digit num in string
 string largestGoodInteger(string num) {
-        string out{""};
-        int l{0}, curMax{0};
+    string out{""};
+    int l{0}, curMax{0};
 
-        for (int r = 1; r < num.size(); r++) {
-            if (num[l] != num[r]) {
-                l = r;
-                continue;
-            }
-            if (r - l >= 2) {
-                curMax = max(curMax, (num[r] - '0'));
-                out.clear();
-                for (int i = 1; i <= 3; i++) {
-                    out += to_string(curMax);
-                }
+    for (int r = 1; r < num.size(); r++) {
+        if (num[l] != num[r]) {
+            l = r;
+            continue;
+        }
+        if (r - l >= 2) {
+            curMax = max(curMax, (num[r] - '0'));
+            out.clear();
+            for (int i = 1; i <= 3; i++) {
+                out += to_string(curMax);
             }
         }
-
-        return out;
     }
+
+    return out;
+}
+
+bool isPowerOfThree(int n) {
+    int temp{n};
+    if (temp == 1) return true;
+
+    while (temp > 1) {
+        int rem = temp % 3;
+        temp /= 3;
+        if (rem != 0) return false;
+        if (temp == 1) return true;
+    }
+
+    return false;
+}
