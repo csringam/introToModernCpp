@@ -47,3 +47,31 @@ vector<int> dijkstra(int start, int n, vector<vector<pair<int,int>>>& adj) {
     return dist; // dist[v] = shortest distance from start to v
 }
 
+// Graph stored as: adj[u] = list of {neighbor, weight}
+// Heuristic: function<int(int,int)> heuristic(node, goal)
+int astar(int start, int goal, int n,
+          vector<vector<pair<int,int>>>& adj,
+          function<int(int,int)> heuristic) {
+
+    vector<int> g(n, INT_MAX); // cost from start to node
+    g[start] = 0;
+
+    // Min-heap ordered by f = g + h
+    priority_queue<pair<int,int>, vector<pair<int,int>>, greater<>> pq;
+    pq.push({heuristic(start, goal), start});
+
+    while (!pq.empty()) {
+        auto [f, u] = pq.top(); pq.pop();
+        if (u == goal) return g[u]; // found shortest path
+
+        for (auto [v, w] : adj[u]) {
+            int tentative = g[u] + w;
+            if (tentative < g[v]) { // found better path
+                g[v] = tentative;
+                int fscore = tentative + heuristic(v, goal);
+                pq.push({fscore, v});
+            }
+        }
+    }
+    return -1; // goal unreachable
+}
